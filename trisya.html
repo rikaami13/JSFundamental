@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tugas if else</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Inputkan nilai:");
+        var grade = "";
+
+        if(nilai >= 80 && nilai<=100) grade = "A"
+        else if(nilai >= 70 && nilai<=80) grade = "B"
+        else if(nilai >= 60 && nilai<=70) grade = "C"
+        else grade = "D";
+
+        document.write(`<p>Hasil Grade: ${grade}</p>`);
+    </script>
+</body>
+</html>
