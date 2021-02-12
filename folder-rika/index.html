@@ -1,1 +1,50 @@
-ss
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fungsi.js"></script>
+</head>
+
+<body>
+    <div>
+        <dd>Nama</dd>
+        <dt><input type="text" id="nama" value="cek nilai"></dt>
+
+        <dd>Rumah</dd>
+        <dt><input type="text" id="rumah"></dt>
+
+        <dd>Hoby</dd>
+        <dt><input type="text" id="hoby"></dt>
+        <button onclick="pushObjectToRecord()">Submit</button>
+    </div>
+    <br><br>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>Nama</th>
+            <th>Rumah</th>
+            <th>Hoby</th>
+        </tr>
+        <tr>
+            <td>Fredy</td>
+            <td>Jkt</td>
+            <td>Tidur</td>
+        </tr>
+        <script>
+            for (let x = 0; x < records.length; x++) {
+                document.write(`
+          <tr>
+            <td>${records[x].nama}</td>
+            <td>${records[x].rumah}</td>
+            <td>${records[x].hobi}</td>
+          </tr>
+        `)
+            }
+        </script>
+    </table>
+</body>
+
+</html>
