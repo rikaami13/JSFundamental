@@ -1,1 +1,42 @@
 ...
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="function.js"></script>
+</head>
+
+<body>
+    <div>
+        <dd>Nama</dd>
+        <dt><input type="text" id="nama" value="cek nilai"></dt>
+
+        <dd>Rumah</dd>
+        <dt><input type="text" id="rumah"></dt>
+
+        <dd>Hoby</dd>
+        <dt><input type="text" id="hoby"></dt>
+        <button onclick="pushObjectToRecord()">Submit</button>
+    </div>
+    <br><br>
+    <table border="1" cellspacing="0" cellpadding="5" id='tabelhe'>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Rumah</th>
+                <th>Hoby</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        update_tabel()
+    </script>
+</body>
+
+</html>
